@@ -1,0 +1,11 @@
+.profile {
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .profile li {
+    margin: 5px 0;
+  }
+  

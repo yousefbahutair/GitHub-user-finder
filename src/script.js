@@ -14,10 +14,12 @@ async function fetchGitUser() {
         console.log("GitHub User Details", res.data);
         // details
         userInfo.innerHTML =
-        `<li>Username: <strong>${res.data.login}</strong></li>
+        `<div class="profile">
+        <li>Username: <strong>${res.data.login}</strong></li>
         <li>Bio: <strong>${res.data.bio}</strong></li>
         <li>Followers: <strong>${res.data.followers}</strong> </li>
-        <li>Public Repos: <strong>${res.data.public_repos}</strong> </li>`
+        <li>Public Repos: <strong>${res.data.public_repos}</strong> </li>
+        </div>`;
     } catch(err){
         userInfo.innerHTML =
         `<p style="color: red;">User not found. Try again..</p>`;
